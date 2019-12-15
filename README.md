@@ -1,6 +1,7 @@
 ##messagesテーブル
 |Column|Type|Options|
-|body|text|image|string|user_id integer|null: false, foreign_key: true|
+|body|text|image|string|
+|user_id integer|null: false, foreign_key: true|
 |group_id integer|null: false, foreign_key: true|
 
 ##Association
@@ -19,7 +20,7 @@
 
 ##groupsテーブル
 |Column|Type|Options|
-|group_name|string|null: false, unique: true|
+|name|string|null: false, unique: true|
 
 ##Association
 - has_many :groups_users
