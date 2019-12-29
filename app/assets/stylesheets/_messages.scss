@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+.flash-box {
+  color: white;
+  font-size: 1rem;
+  font-weight: lighter;
+  text-align: center;
+  width: 100vw;
+}
+
 .chat-side{
   width: 300px;
   color: white;
@@ -51,10 +59,9 @@
   background-color: #2f3e51;
   padding: 20px 20px 0;
   overflow: scroll;
-}
-
-.chat-side a {
-  color: white;
+    width: 300px;
+    color: white;
+    float: left;
 }
 
 .chat-main {
@@ -73,6 +80,10 @@
 
 .chat-main .main-header__left-box {
   margin-top: 35px;
+}
+
+.chat-side a {
+  color: white;
 }
 
 .chat-main .main-header__edit-btn {
