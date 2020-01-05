@@ -1,0 +1,64 @@
+
+%body
+.wrapper
+<div class="chat-side">
+<div class="side-header">
+<div class="side-header__box">
+<p class="side-header__box__user-name">test</p>
+<ul class="side-header__box__menu">
+<li class="side-header__box__menu__new-group">
+<a href="#"><i class="fa fa-edit"></i>
+</a></li>
+
+<li class="side-header__box__menu__edit-user">
+<a href="#"><i class="fa fa-cog"></i>
+</a></li>
+</ul>
+</div>
+
+</div>
+
+
+<div class="groups">
+<a href="#"><div class="group">
+<p class="group__group-name">test</p>
+<p class="group__latest-message">メッセージがありません</p>
+</div>
+</a></div>
+</div>
+
+
+<div class="chat-main">
+<div class="main-header">
+<div class="main-header__left-box">
+<h2 class="main-header__left-box__current-group" data-group_id="11764">
+test
+</h2>
+
+<ul class="main-header__left-box__member-list">
+Member：
+<li class="main-header__left-box__member-list__member">test</li>
+</ul>
+</div>
+
+<a href="#"><div class="main-header__edit-btn">Edit</div>
+</a></div>
+
+<div class="messages">
+</div>
+
+<div class="form">
+<form class="new_message" id="new_message" enctype="multipart/form-data" action="/groups/11764/messages"
+accept-charset="UTF-8"method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden"
+name="authenticity_token"
+value="EOb7/RjXKm7J7BbQT7lhnFIHq67iwCPlnHksbx14+zT0Tgfv9LolG+V8k+UQgwPBn9B+XBxmEIox2PxhLRYAOQ=="><div class="input-box">
+
+<input placeholder="type a message" class="input-box__text" type="text" name="message[content]" id="message_content">
+<label class="input-box__image" for="message_image"><i class="fa fa-image"></i>
+<input class="input-box__image__file" type="file" name="message[image]" id="message_image">
+</label></div>
+
+<input type="submit" name="commit" value="Send" class="submit-btn" data-disable-with="Send">
+</form></div>
+
+</div>
